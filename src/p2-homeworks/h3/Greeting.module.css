@@ -3,5 +3,11 @@
 }
 
 .error {
+    /*background-color: red;*/
     border: 1px solid red;
+}
+
+.active {
+    border: 1px solid white;
+    /*background-color: black;*/
 }
