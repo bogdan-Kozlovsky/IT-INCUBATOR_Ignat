@@ -4,7 +4,7 @@ import s from './Greeting.module.css'
 type GreetingPropsType = {
     name: string // need to fix any
     setNameCallback: (e: ChangeEvent<HTMLInputElement>) => void// need to fix any
-    addUser: (name:string) => void  // need to fix any
+    addUser: () => void  // need to fix any
     error: string // need to fix any
     totalUsers: number // need to fix any
 }
@@ -13,13 +13,16 @@ type GreetingPropsType = {
 const Greeting: React.FC<GreetingPropsType> = (
     {name, setNameCallback, addUser, error, totalUsers} // деструктуризация пропсов
 ) => {
-    const inputClass = error ?  s.active : s.error    // need to fix with (?:)
+    const inputClass = error ? s.active : s.error    // need to fix with (?:)
+
+
+    const disabled = error ? true : false
 
     return (
         <div>
             <input value={name} onChange={setNameCallback} className={inputClass}/>
             <span>{error}</span>
-            <button  onClick={addUser} className={inputClass}>add</button>
+            <button disabled={disabled} onClick={addUser} className={inputClass}>add</button>
             <span>{totalUsers}</span>
         </div>
     )
