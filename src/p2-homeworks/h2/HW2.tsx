@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import Affairs from './Affairs'
-import  s from './Affairs.module.css'
+import s from './Affairs.module.css'
+import './../../App.css'
 
 // types
 export type AffairPriorityType = 'high' | 'low' | 'middle'
@@ -45,7 +46,7 @@ function HW2() {
     return (
         <div>
             <hr/>
-            <h1 className={s.affair__title}>homeworks 2</h1>
+            <h2 className="title">homeworks 2</h2>
 
             {/*should work (должно работать)*/}
             <Affairs

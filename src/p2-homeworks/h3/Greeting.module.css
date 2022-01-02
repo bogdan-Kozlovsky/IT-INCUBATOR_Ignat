@@ -3,11 +3,57 @@
 }
 
 .error {
-    /*background-color: red;*/
     border: 1px solid red;
+    background-color: red;
 }
 
-.active {
-    border: 1px solid white;
-    /*background-color: black;*/
+.active{
+    background-color: red;
+}
+
+.greeting {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto 20px auto;
+}
+
+.greeting__title {
+
+}
+
+.greeting__input {
+    padding: 5px 10px;
+    border: 1px solid orange;
+    display: inline-block;
+    max-width: 200px;
+    width: 100%;
+    height: 25px;
+    background-color: transparent;
+    color: white;
+    margin-bottom: 15px;
+}
+
+greeting__input::placeholder {
+    color: white;
+}
+
+.greeting__btn {
+    background-color: transparent;
+    color: white;
+    height: 25px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.greeting__btn:hover {
+    color: orange;
+}
+
+.greeting__counter{
+    display: inline-block;
+    padding: 1px 5px;
+    margin-left: 40px;
+    /*width: 25px;*/
+    /*height: 25px;*/
+    border: 1px solid orange;
 }

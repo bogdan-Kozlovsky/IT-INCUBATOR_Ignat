@@ -4,13 +4,6 @@
     margin: 0 auto;
 }
 
-.affair__title {
-    text-align: center;
-    font-size: 25px;
-    margin: 10px 0;
-    color: orange;
-}
-
 .affairs__box {
     padding: 10px;
     max-width: 400px;
@@ -19,7 +12,7 @@
     margin-bottom: 20px;
 }
 
-.affairs__btn_box{
+.affairs__btn_box {
     display: flex;
     justify-content: space-between;
 }
@@ -46,11 +39,11 @@
     transition: all 0.5s;
 }
 
-.affair__btn:hover{
+.affair__btn:hover {
     border: 1px solid white;
     color: white;
 }
 
-.affair__cart{
+.affair__cart {
     margin-bottom: 25px;
 }

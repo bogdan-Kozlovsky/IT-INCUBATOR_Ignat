@@ -1,5 +1,7 @@
 import React from 'react'
-import {Message} from "./Message";
+import {Message} from './Message';
+import s from './Message.module.css'
+import './../../App.css'
 
 const messageData = {
     avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUfjaEv_dGhNzdS1Bg5O6iMWaLrqOKjT2RlA&usqp=CAU',
@@ -19,7 +21,7 @@ function HW1() {
     return (
         <div>
             <hr/>
-            homeworks 1
+            <h2 className="title">homeworks 1</h2>
 
             {/*should work (должно работать)*/}
 

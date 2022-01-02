@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
 import GreetingContainer from './GreetingContainer'
 import {v1} from 'uuid';
+import s from './Greeting.module.css'
+import './../../App.css'
 
 // types
 export type UserType = {
@@ -20,7 +22,7 @@ function HW3() {
     return (
         <div>
             <hr/>
-            homeworks 3
+            <h2 className="title"> homeworks 3</h2>
 
             {/*should work (должно работать)*/}
             <GreetingContainer users={users} addUserCallback={addUserCallback}/>

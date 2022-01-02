@@ -3,6 +3,7 @@ import SuperInputText from './common/c1-SuperInputText/SuperInputText'
 import s from './HW4.module.css'
 import SuperButton from './common/c2-SuperButton/SuperButton'
 import SuperCheckbox from './common/c3-SuperCheckbox/SuperCheckbox'
+import './../../App.css'
 
 function HW4() {
     const [text, setText] = useState<string>('')
@@ -22,49 +23,54 @@ function HW4() {
     return (
         <div>
             <hr/>
-            homeworks 4
+            <h2 className="title"> homeworks 4</h2>
 
-            <div className={s.column}>
-                <SuperInputText
-                    value={text}
-                    onChangeText={setText}
-                    onEnter={showAlert}
-                    error={error}
-                    // spanClassName={s.testSpanError}
-                />
+            <div className={s.columnWrapper}>
+                <div className={s.column}>
+                    <SuperInputText
+                        value={text}
+                        onChangeText={setText}
+                        onEnter={showAlert}
+                        error={error}
+                        // spanClassName={s.testSpanError}
+                    />
 
-                <SuperInputText
-                    className={s.blue} // проверьте, рабоет ли смешивание классов
-                />
+                    <SuperInputText
+                        className={s.blue} // проверьте, рабоет ли смешивание классов
+                    />
 
-                {/*----------------------------------------------------*/}
+                    {/*----------------------------------------------------*/}
 
-                <SuperButton>
-                    default
-                </SuperButton>
 
-                <SuperButton
-                    red // пропсу с булевым значением не обязательно указывать true
-                    onClick={showAlert}
-                >
-                    delete {/*// название кнопки попадёт в children*/}
-                </SuperButton>
+                    <SuperCheckbox
+                        checked={checked}
+                        onChangeChecked={setChecked}>
+                        Confirm {/*// этот текст попадёт в children*/}
+                    </SuperCheckbox>
+                    <SuperButton
+                        red // пропсу с булевым значением не обязательно указывать true
+                        onClick={showAlert}
+                    >
+                        delete {/*// название кнопки попадёт в children*/}
+                    </SuperButton>
 
-                <SuperButton disabled>
-                    disabled
-                </SuperButton>
+                    <SuperButton disabled>
+                        disabled
+                    </SuperButton>
 
-                {/*----------------------------------------------------*/}
+                    {/*----------------------------------------------------*/}
 
-                <SuperCheckbox
-                    checked={checked}
-                    onChangeChecked={setChecked}
-                >
-                    some text {/*// этот текст попадёт в children*/}
-                </SuperCheckbox>
 
-                {/*// onChange тоже должен работать*/}
-                <SuperCheckbox checked={checked} onChange={testOnChange}/>
+                    {/*// onChange тоже должен работать*/}
+                    <SuperCheckbox
+                        checked={checked}
+                        onChange={testOnChange}>
+                        likes
+                    </SuperCheckbox>
+                    <SuperButton>
+                        default
+                    </SuperButton>
+                </div>
             </div>
 
             <hr/>

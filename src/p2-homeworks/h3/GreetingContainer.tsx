@@ -1,5 +1,6 @@
 import React, {ChangeEvent, useState} from 'react'
 import Greeting from './Greeting'
+import SuperInputText from '../h4/common/c1-SuperInputText/SuperInputText';
 
 export type UsersPropsType = {
     name: string
@@ -45,13 +46,23 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
     const totalUsers = users.length // need to fix
 
     return (
-        <Greeting
-            name={name}
-            setNameCallback={setNameCallback}
-            addUser={addUser}
-            error={error}
-            totalUsers={totalUsers}
-        />
+        <div>
+            <Greeting
+                name={name}
+                setNameCallback={setNameCallback}
+                addUser={addUser}
+                error={error}
+                totalUsers={totalUsers}
+            />
+
+            {/*<SuperInputText*/}
+            {/*    value={name}*/}
+            {/*    // onChangeText={setNameCallback}*/}
+            {/*    onEnter={addUser}*/}
+            {/*    error={error}*/}
+            {/*    // spanClassName={s.testSpanError}*/}
+            {/*/>*/}
+        </div>
     )
 }
 
