@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/IT-INCUBATOR_Ignat/static/css/main.ec2ad2b3.chunk.css",
+    "main.js": "/IT-INCUBATOR_Ignat/static/js/main.c65e6c98.chunk.js",
+    "main.js.map": "/IT-INCUBATOR_Ignat/static/js/main.c65e6c98.chunk.js.map",
+    "runtime-main.js": "/IT-INCUBATOR_Ignat/static/js/runtime-main.eaf6a64e.js",
+    "runtime-main.js.map": "/IT-INCUBATOR_Ignat/static/js/runtime-main.eaf6a64e.js.map",
+    "static/js/2.7bf9f02c.chunk.js": "/IT-INCUBATOR_Ignat/static/js/2.7bf9f02c.chunk.js",
+    "static/js/2.7bf9f02c.chunk.js.map": "/IT-INCUBATOR_Ignat/static/js/2.7bf9f02c.chunk.js.map",
+    "index.html": "/IT-INCUBATOR_Ignat/index.html",
+    "static/css/main.ec2ad2b3.chunk.css.map": "/IT-INCUBATOR_Ignat/static/css/main.ec2ad2b3.chunk.css.map",
+    "static/js/2.7bf9f02c.chunk.js.LICENSE.txt": "/IT-INCUBATOR_Ignat/static/js/2.7bf9f02c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.eaf6a64e.js",
+    "static/js/2.7bf9f02c.chunk.js",
+    "static/css/main.ec2ad2b3.chunk.css",
+    "static/js/main.c65e6c98.chunk.js"
+  ]
+}
