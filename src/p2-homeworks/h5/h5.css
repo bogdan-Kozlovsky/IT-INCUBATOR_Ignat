@@ -1,0 +1,57 @@
+.headerLink {
+    margin-right: 50px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.headerWrapper {
+    display: inline-block;
+
+    /*margin: 0 auto;*/
+    padding: 20px 10px;
+    position: relative;
+}
+
+.headerWrapper::after {
+    cursor: pointer;
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #61dafb;
+    transition: all 0.3s;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+
+.overflow {
+    display: inline;
+    position: relative;
+    left: -21%;
+    transition: all 0.9s;
+}
+
+.overflow:hover {
+    left: 0;
+}
+
+.overflow:hover .headerWrapper::after {
+    border-radius: 50%;
+    background-color: #ff6f00;
+}
+
+.headerLinkActive {
+    color: #ff6f00;
+}
+
+.errorWrapper {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
