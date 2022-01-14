@@ -1,0 +1,31 @@
+.wrapper {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.title {
+    padding: 5px 0 20px;
+}
+
+.box__btn {
+    padding: 5px 0 15px;
+}
+
+.span{
+    cursor: pointer;
+    position: relative;
+}
+
+.span::after{
+    content: '';
+    position: absolute;
+    top: -4px;
+    right: -22px;
+    width: 21px;
+    height: 21px;
+    /*background-image: url(https://cdn.icon-icons.com/icons2/520/PNG/128/Pencil_icon-icons.com_51975.png);*/
+    background-image: url(icons/decor.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
