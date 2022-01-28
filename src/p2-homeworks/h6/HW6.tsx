@@ -16,27 +16,31 @@ function HW6() {
     }
 
     return (
-        <div className={s.wrapper}>
+        <div>
             <hr/>
-            <h2 className='title'>homeworks 6</h2>
+            <div className={s.wrapper}>
+                <h2 className='title'>homeworks 6</h2>
 
-            {/*should work (должно работать)*/}
-            <div className={s.title}>
-                <SuperEditableSpan
-                    value={value}
-                    onChangeText={setValue}
-                    spanProps={{children: value ? undefined : 'enter text...'}}
-                />
-            </div>
-            <div className={s.box__btn}>
-                <SuperButton onClick={save}>save</SuperButton>
-                <SuperButton onClick={restore}>restore</SuperButton>
-            </div>
+                {/*should work (должно работать)*/}
+                <div className={s.title}>
+                    <SuperEditableSpan
+                        value={value}
+                        onChangeText={setValue}
+                        spanProps={{children: value ? undefined : 'enter text...'}}
+                    />
+                </div>
+                <div className={s.box__btn}>
+                    <SuperButton onClick={save}>save</SuperButton>
+                    <SuperButton onClick={restore}>restore</SuperButton>
+                </div>
 
+
+                {/*для личного творчества, могу проверить*/}
+                {/*<AlternativeSuperEditableSpan/>*/}
+            </div>
             <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeSuperEditableSpan/>*/}
             <hr/>
+
         </div>
     )
 }
