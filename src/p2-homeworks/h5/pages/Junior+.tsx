@@ -4,8 +4,8 @@ import HW7 from "../../h7/HW7";
 
 export function JuniorPlus() {
     return (
-        <div className='wrapper'>
-            <HW7/>
+        <div >
+            заглушка
         </div>
     )
 }
