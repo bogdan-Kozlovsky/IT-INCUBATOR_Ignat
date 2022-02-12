@@ -3,6 +3,7 @@ import GreetingContainer from './GreetingContainer'
 import {v1} from 'uuid';
 import s from './Greeting.module.css'
 import './../../App.css'
+import {UniversalTitle} from "../../components/UniversalTitle";
 
 // types
 export type UserType = {
@@ -22,7 +23,8 @@ function HW3() {
     return (
         <div>
             <hr/>
-            <h2 className="title"> homeworks 3</h2>
+            <UniversalTitle name={'homeworks 3'}/>
+
 
             {/*should work (должно работать)*/}
             <GreetingContainer users={users} addUserCallback={addUserCallback}/>

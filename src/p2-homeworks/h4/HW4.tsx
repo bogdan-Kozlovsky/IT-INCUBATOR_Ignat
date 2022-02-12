@@ -4,6 +4,7 @@ import s from './HW4.module.css'
 import SuperButton from './common/c2-SuperButton/SuperButton'
 import SuperCheckbox from './common/c3-SuperCheckbox/SuperCheckbox'
 import './../../App.css'
+import {UniversalTitle} from "../../components/UniversalTitle";
 
 function HW4() {
     const [text, setText] = useState<string>('')
@@ -23,7 +24,7 @@ function HW4() {
     return (
         <div>
             <hr/>
-            <h2 className="title"> homeworks 4</h2>
+            <UniversalTitle name={'homeworks 4'}/>
 
             <div className={s.columnWrapper}>
                 <div className={s.column}>

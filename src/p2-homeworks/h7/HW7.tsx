@@ -3,6 +3,7 @@ import SuperSelect from './common/c5-SuperSelect/SuperSelect'
 import SuperRadio from './common/c6-SuperRadio/SuperRadio'
 import './../../App.css'
 import s from './h7.module.css'
+import {UniversalTitle} from "../../components/UniversalTitle";
 
 const arr = ['x', 'y', 'z']
 
@@ -12,7 +13,7 @@ function HW7() {
     return (
         <div>
             <hr/>
-            <h2 className="title">homeworks 7</h2>
+            <UniversalTitle name={'homeworks 7'}/>
 
 
             {/*should work (должно работать)*/}

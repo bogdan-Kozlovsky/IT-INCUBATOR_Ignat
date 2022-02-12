@@ -2,6 +2,7 @@ import React from 'react'
 import {Message} from './Message';
 import s from './Message.module.css'
 import './../../App.css'
+import {UniversalTitle} from "../../components/UniversalTitle";
 
 const messageData = {
     avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUfjaEv_dGhNzdS1Bg5O6iMWaLrqOKjT2RlA&usqp=CAU',
@@ -21,8 +22,7 @@ function HW1() {
     return (
         <div>
             <hr/>
-            <h2 className="title">homeworks 1</h2>
-
+            <UniversalTitle name={'homeworks 1'}/>
             {/*should work (должно работать)*/}
 
             <Message

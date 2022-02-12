@@ -1,12 +1,13 @@
 import React from 'react'
 import Clock from './Clock'
 import './../../App.css'
+import {UniversalTitle} from "../../components/UniversalTitle";
 
 function HW9() {
     return (
         <div>
             <hr/>
-            <h2 className="title">homeworks 9</h2>
+            <UniversalTitle name={'homeworks 9'}/>
 
             {/*should work (должно работать)*/}
             <Clock/>

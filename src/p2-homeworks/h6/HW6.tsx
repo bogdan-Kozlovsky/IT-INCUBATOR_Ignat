@@ -4,6 +4,7 @@ import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
 import {restoreState, saveState} from './localStorage/localStorage'
 import s from './homemade.module.css'
 import './../../App.css'
+import {UniversalTitle} from "../../components/UniversalTitle";
 
 function HW6() {
     const [value, setValue] = useState<string>('')
@@ -19,7 +20,7 @@ function HW6() {
         <div>
             <hr/>
             <div className={s.wrapper}>
-                <h2 className='title'>homeworks 6</h2>
+                <UniversalTitle name={'homeworks 6'}/>
 
                 {/*should work (должно работать)*/}
                 <div className={s.title}>

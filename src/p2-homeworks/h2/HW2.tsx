@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import Affairs from './Affairs'
 import s from './Affairs.module.css'
 import './../../App.css'
+import {UniversalTitle} from "../../components/UniversalTitle";
 
 // types
 export type AffairPriorityType = 'high' | 'low' | 'middle'
@@ -46,8 +47,7 @@ function HW2() {
     return (
         <div>
             <hr/>
-            <h2 className="title">homeworks 2</h2>
-
+            <UniversalTitle name={'homeworks 2'}/>
             {/*should work (должно работать)*/}
             <Affairs
                 data={filteredAffairs}

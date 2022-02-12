@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import {ageSortingAC, homeWorkReducer, sortDownAC, sortUpAC} from './bll/homeWorkReducer'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
 import '../../App.css'
+import {UniversalTitle} from "../../components/UniversalTitle";
 
 export type UserType = {
     _id: number
@@ -39,7 +40,7 @@ function HW8() {
     return (
         <div>
             <hr/>
-            <h2 className="title">homeworks 8</h2>
+            <UniversalTitle name={'homeworks 8'}/>
 
             {/*should work (должно работать)*/}
             <div style={{width: '300px', paddingBottom: '20px'}}>
