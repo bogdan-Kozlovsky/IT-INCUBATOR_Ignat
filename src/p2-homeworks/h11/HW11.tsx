@@ -1,33 +1,44 @@
-import React, {useState} from 'react'
+import React from 'react'
 import SuperRange from './common/c7-SuperRange/SuperRange'
-import SuperDoubleRange from './common/c8-SuperDoubleRange/SuperDoubleRange'
+import {UniversalTitle} from "../../components/UniversalTitle";
+import s from './h11.module.css'
 
 function HW11() {
-    const [value1, setValue1] = useState(0)
-    const [value2, setValue2] = useState(100)
+    const [values, setValues] = React.useState<number[]>([0, 100]);
 
+    const onChangeRange = (newValue: number) => {
+        setValues([newValue, values[1]])
+    }
     return (
         <div>
             <hr/>
-            homeworks 11
-
-            {/*should work (должно работать)*/}
-            <div>
-                <span>{value1}</span>
-                <SuperRange
-                    // сделать так чтоб value1 изменялось
-                />
-            </div>
-
-            <div>
-                <span>{value1}</span>
-                <SuperDoubleRange
-                    // сделать так чтоб value1 и value2 изменялось
-                />
-                <span>{value2}</span>
-            </div>
-
+            <UniversalTitle name={'homeworks 11'}/>
             <hr/>
+            {/*should work (должно работать)*/}
+            <div className={s.block}>
+                <span className={s.block__span}>{values[0]}--{values[1]}</span>
+                <div style={{textAlign: 'center'}}>
+                    <div>
+                        <SuperRange
+                            onChangeRange={onChangeRange}
+                            value={values[0]}
+                        />
+                    </div>
+                    <div>
+                        <SuperRange
+                            onChangeRange={onChangeRange}
+                            value={values[0]}
+                        />
+                    </div>
+                </div>
+
+            </div>
+
+            <div>
+
+            </div>
+
+
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeSuperRange/>*/}
             {/*<AlternativeSuperDoubleRange/>*/}

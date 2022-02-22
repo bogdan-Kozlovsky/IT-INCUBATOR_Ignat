@@ -1,0 +1,11 @@
+.block {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.block__span {
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+}
