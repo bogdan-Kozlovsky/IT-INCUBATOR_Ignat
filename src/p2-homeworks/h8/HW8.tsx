@@ -21,7 +21,6 @@ const initialPeople = [
 
 function HW8() {
     const [people, setPeople] = useState<Array<UserType>>(initialPeople) // need to fix any
-    console.log('set', people)
     // need to fix any
     const finalPeople = people.map((p: UserType) => (
         <div key={p._id}>
