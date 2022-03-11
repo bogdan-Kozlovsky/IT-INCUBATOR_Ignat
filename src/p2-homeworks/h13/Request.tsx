@@ -17,9 +17,9 @@ const Request = () => {
     }
 
     return (
-        <div>
-            <p style={{padding:'10px 0'}}>{description}</p>
-            <button onClick={click}>Click</button>
+        <div style={{paddingBottom: '20px'}}>
+            <p style={{padding: '10px 0'}}>{description}</p>
+            <button style={{marginRight: '20px'}} onClick={click}>Click</button>
             <input
                 checked={valueChecked}
                 type="checkbox"
